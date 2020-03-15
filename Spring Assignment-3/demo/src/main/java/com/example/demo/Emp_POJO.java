@@ -1,18 +1,11 @@
-package com.example.demo.q2;
+package com.example.demo;
 
-import javax.validation.constraints.Size;
-
-public class q2emp {
+public class Emp_POJO {
     private Integer id;
-    @Size (min=2)
     private String name;
     private Integer age;
 
-    protected q2emp()
-    {
-
-    }
-    public q2emp(Integer id, String name, Integer age) {
+    public Emp_POJO(Integer id, String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -37,13 +30,15 @@ public class q2emp {
     public Integer getAge() {
         return age;
     }
-    public void setAge(Integer age) {
+
+        public void setAge(Integer age) {
         this.age = age;
     }
 
+
     @Override
     public String toString() {
-        return "q2emp{" +
+        return "Emp_POJO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
