@@ -1,7 +1,5 @@
 package com.ecommerce.Ecommerce.entities.Registration_Details;
 
-import com.ecommerce.Ecommerce.Order_Details.Orders;
-import com.ecommerce.Ecommerce.entities.Product_Details.Cart;
 import com.ecommerce.Ecommerce.entities.Product_Details.Product_Review;
 
 import javax.persistence.*;

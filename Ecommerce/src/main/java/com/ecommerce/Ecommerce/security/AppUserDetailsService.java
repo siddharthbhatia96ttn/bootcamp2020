@@ -1,7 +1,6 @@
 
 package com.ecommerce.Ecommerce.security;
 
-import com.ecommerce.Ecommerce.entities.AppUser;
 import com.ecommerce.Ecommerce.entities.Registration_Details.User;
 import com.ecommerce.Ecommerce.repos.UserRepository;
 import com.ecommerce.Ecommerce.services.UserDaoService;

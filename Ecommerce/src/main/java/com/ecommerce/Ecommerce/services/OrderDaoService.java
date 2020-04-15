@@ -1,7 +1,7 @@
 package com.ecommerce.Ecommerce.services;
 
-import com.ecommerce.Ecommerce.Order_Details.Order_Product;
-import com.ecommerce.Ecommerce.Order_Details.Orders;
+import com.ecommerce.Ecommerce.entities.Order_Details.Order_Product;
+import com.ecommerce.Ecommerce.entities.Order_Details.Orders;
 import com.ecommerce.Ecommerce.entities.Product_Details.Cart;
 import com.ecommerce.Ecommerce.entities.Product_Details.Product_Variation;
 import com.ecommerce.Ecommerce.entities.Registration_Details.Address;

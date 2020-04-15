@@ -1,13 +1,11 @@
 package com.ecommerce.Ecommerce.controller;
 
-import com.ecommerce.Ecommerce.Dto.ForgotPasswordDto;
+import com.ecommerce.Ecommerce.dto.ForgotPasswordDto;
 import com.ecommerce.Ecommerce.services.ForgotPasswordService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class ForgotPasswordController {
     @Autowired
     ForgotPasswordService forgotPasswordService;
@@ -15,7 +13,8 @@ public class ForgotPasswordController {
     @PostMapping("/forgot-password")
     public String resetPassword(@RequestBody String email){
         String message = forgotPasswordService.resetUserPassword(email);
-        return message;
+       return message;
+        //return "hello";
     }
 
     @PutMapping("/reset-password")

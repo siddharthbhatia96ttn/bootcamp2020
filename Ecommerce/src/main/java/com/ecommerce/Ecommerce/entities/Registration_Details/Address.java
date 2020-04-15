@@ -1,5 +1,7 @@
 package com.ecommerce.Ecommerce.entities.Registration_Details;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+
 import javax.persistence.*;
 
 @Entity

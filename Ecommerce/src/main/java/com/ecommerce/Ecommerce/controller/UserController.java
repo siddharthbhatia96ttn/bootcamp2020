@@ -5,7 +5,6 @@ import com.ecommerce.Ecommerce.entities.Product_Details.Product;
 import com.ecommerce.Ecommerce.entities.Product_Details.Product_Variation;
 import com.ecommerce.Ecommerce.entities.Registration_Details.*;
 import com.ecommerce.Ecommerce.services.UserDaoService;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
@@ -79,6 +78,11 @@ public class UserController {
     @GetMapping("/seller/home")
     public String sellerHome(){
         return "Welcome Seller To Online Shopping Portal";
+    }
+
+    @GetMapping("/customer/home")
+    public String customerHome(){
+        return "Welcome Customer To Online Shopping Portal";
     }
 
     @PostMapping(value="/confirmSave")

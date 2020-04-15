@@ -1,6 +1,6 @@
 package com.ecommerce.Ecommerce.services;
 
-import com.ecommerce.Ecommerce.Dto.ForgotPasswordDto;
+import com.ecommerce.Ecommerce.dto.ForgotPasswordDto;
 
 import com.ecommerce.Ecommerce.entities.Registration_Details.EmailSenderService;
 import com.ecommerce.Ecommerce.entities.Registration_Details.ResetPasswordToken;
@@ -54,7 +54,6 @@ public class ForgotPasswordService {
          }
          SimpleMailMessage mailMessage=new SimpleMailMessage();
          mailMessage.setTo(user.getEmail());
-         System.out.println("+++++++++++++++++++++"+user.getEmail());
          mailMessage.setSubject("Account activated");
          mailMessage.setFrom("siddharth.bhatia1996@gmail.com");
          mailMessage.setText("To reset your password , please click here "
