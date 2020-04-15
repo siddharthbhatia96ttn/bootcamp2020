@@ -15,5 +15,5 @@ import java.util.Optional;
 public interface CustomerRepository extends CrudRepository<Customer,Integer> {
     Page<Customer> findAll(Pageable pageable);
 
-   Optional<Customer> findByEmail(String emailid);
+   // Optional<Customer> findByEmailCustomer(String emailId);
 }

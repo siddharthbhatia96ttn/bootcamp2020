@@ -6,7 +6,6 @@ import com.ecommerce.Ecommerce.entities.Registration_Details.Seller;
 import com.ecommerce.Ecommerce.entities.Registration_Details.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,11 +16,7 @@ import static java.lang.Boolean.TRUE;
 @Repository
 public interface UserRepository extends CrudRepository<User,Integer> {
   Optional <User> findByEmail(String useremail);
-
-/*
-  @Query(value = "select city,country,house_number,label,state,zip_code from address,user where user.id=address.user_id and user_id=id",nativeQuery = true)
-  List<Object[]>  findListCustomer(@Param("id") Integer id);
-*/
+  // User findByEmail2(String useremail);
 
 
 
