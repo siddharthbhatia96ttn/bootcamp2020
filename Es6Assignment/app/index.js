@@ -1,16 +1,33 @@
 import { q1 } from './q1'
+import { videoNames, flexBoxArray, arrayTime, arraySecond, totalTime } from './q2'
 import { output } from './q3'
 import { addLine1,addLine2,addState,addPin,addCountry,addCity } from './q4'
 import { Grandparent,Parent,Child } from './q6'
 import { areaCircle, areaCylinder, areaRectangle } from './q8'
 import { q9 } from './q9'
-
+import { LinkedList } from './q11'
+import { stackUsingLL } from './q13'
 
 //Q-1
 console.log("answer of Q-1");
 let numbers = [3, 62, 234, 7, 23, 74, 23, 76, 92];
  q1(numbers);
 
+ //Q-2
+ console.log("a. Select all the list items on the page and convert to array.")
+ console.log(videoNames);
+
+ console.log("b. Filter for only the elements that contain the word 'flexbox'");
+ console.log(flexBoxArray);
+
+ console.log("c. Map down to a list of time strings");
+ console.log(arrayTime);
+
+ console.log("d. Map to an array of seconds");
+ console.log(arraySecond);
+
+ console.log("e. Reduce to get total using .filter and .map");
+ console.log(totalTime);
 
 //Q-4
 console.log("answer of Q-4");
@@ -52,6 +69,18 @@ let digits = [21,21,22,23,23,45,45,67,67,89];
  console.log(nestedArray);
  console.log(`flattered to ${flatArrays}`);
 
+//q-11
+console.log("answer of Q11");
+let list=new LinkedList();
+list.addFirst(5);
+list.addFirst(7);
+list.addFirst(8);
+list.addLast(9);
+console.log("my-link list",list);
+console.log("First-element",list.getFirst());
+console.log("Last-element",list.getLast());
+console.log("Length of linked list",list.lengthOfList());
+
 //Q-12
 console.log("answer of Q-12");
 let numArr=[[1,'one'],[2,'two'],[3,'three']];
@@ -61,3 +90,23 @@ for(let [key,value] of valMap.entries())
 {
   console.log(`${key} points to ${value}`);
 }
+
+//Q-13
+console.log("answer of Q13")
+let stack = new stackUsingLL();   //creating new instance of Stack
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log("my stack is->",stack.toArray());
+
+
+console.log("top element of stack",stack.peek());
+console.log("is stack empty",stack.isEmpty());
+console.log("stack size-",stack.size());
+console.log("pop function->",stack.pop());
+console.log("my stack after pop",stack.toArray());
+console.log("stack size-",stack.size());
+console.log("clearing the stack");
+stack.clear();  //clear the stack
+console.log("is stack empty",stack.isEmpty());
