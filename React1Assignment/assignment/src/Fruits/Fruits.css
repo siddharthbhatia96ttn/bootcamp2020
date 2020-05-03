@@ -1,0 +1,12 @@
+table {
+  border: 1px solid black;
+  padding:8px;
+  position: absolute;
+  right:540px;
+  top:120px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
